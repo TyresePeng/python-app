@@ -16,3 +16,9 @@ with Session() as session:
     result = session.query(User).all()
     for user in result:
         print(user)
+
+# 创建新用户
+def user_list():
+    users=session.query(User).all()
+    return [user.model_to_dict() for user in users]
+

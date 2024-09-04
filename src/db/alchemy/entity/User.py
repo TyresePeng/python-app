@@ -8,11 +8,12 @@ from sqlalchemy import (
 )
 import datetime
 from sqlalchemy.orm import declarative_base
+from src.common.BaseEntyty import BaseEntyty
 
 # 创建对象的基类
 Base = declarative_base()
 
-class User(Base):
+class User(Base,BaseEntyty):
     __tablename__ = 'test_user'
 
     id = Column(Integer, primary_key=True, comment="主建")
