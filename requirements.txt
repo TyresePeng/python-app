@@ -3,3 +3,4 @@ selenium
 PyMySQL
 SQLAlchemy
 pydantic
+openpyxl
