@@ -4,3 +4,4 @@ PyMySQL
 SQLAlchemy
 pydantic
 openpyxl
+xlsxwriter
